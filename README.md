@@ -16,12 +16,14 @@ Then, you need to call `require( 'mellat-payment' )`:
 ## Usage
 ### Request a payment
 `Mellat.Request( terminal: String, username: String, password: String, amount: Number, returnPage:String )` ⇒ **Promise**
+
 Requests a payment session from the bank.
 
 Returns an object containing `RefId` and `ResCode` on success, `errorCode` (String) from bank on disagreement or `e` (Object) on failure.
 
 ### Verify a payment
 `Mellat.Verify( terminal: String, username: String, password: String, saleOrderId: String, resCode: String, saleRefId: String )` ⇒ **Promise**
+
 Verifies given invoice from the bank, if verification was OK, it inquiries and settles the payment automatically, either it reverses the payment.
 [See the example](https://github.com/EhsaanF/mellat-payment-example) if you don't know where saleOrderId, resCode and saleRefId comes from.
 
