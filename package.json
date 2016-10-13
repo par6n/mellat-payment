@@ -1,0 +1,32 @@
+{
+  "name": "mellat-payment",
+  "version": "1.0.0",
+  "description": "Iranian Mellat gateway processor, for NodeJS.",
+  "main": "./mellat.js",
+  "scripts": {
+    "run-example": "node ./example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehsaanf/mellat-payment.git"
+  },
+  "keywords": [
+    "mellat",
+    "payment",
+    "iranian",
+    "checkout"
+  ],
+  "author": "EhsaanF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehsaanf/mellat-payment/issues"
+  },
+  "homepage": "https://github.com/ehsaanf/mellat-payment#readme",
+  "dependencies": {
+    "moment": "^2.15.1",
+    "soap": "^0.17.0"
+  },
+  "engines":{
+    "node": ">=4.0.0"
+  }
+}
